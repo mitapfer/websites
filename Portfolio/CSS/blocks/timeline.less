@@ -1,0 +1,125 @@
+// main: ../style.less
+
+.timeline {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 4.2rem auto;
+    width: 100%;
+    max-width: 768px;
+    position: relative;
+
+    &:before {
+        content: "";
+        display: block;
+        width: 1px;
+        height: 100%;
+        background-color: @black;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        z-index: 1;
+    }
+
+    @media @modal-sm {
+
+        margin: 3.5rem auto;
+
+        &:before {
+            display: none;
+        }
+    }
+}
+
+.timeline_col {
+    width: 50%;
+
+    &--left {
+        padding-right: 3.2rem;
+        text-align: right;
+
+        @media @modal-sm {
+            text-align: left;
+            padding: 0 2rem;
+        }
+
+        @media @very-sm {
+            padding: 0 .5rem;
+        }
+    }
+
+    &--right {
+        padding-left: 3.2rem;
+    }
+
+    @media @modal-sm {
+        width: 100%;
+
+        &--right {
+            margin-top: 3.5rem;
+            padding: 0 2rem;
+        }
+    }
+
+    @media @very-sm {
+        &--right {
+            padding: 0 .5rem;
+        }
+    }
+}
+
+.timeline_title {
+    margin-bottom: 2.6rem;
+    font-size: 1.2rem;
+    color: @black;
+    text-transform: uppercase;
+    font-weight: 700;
+
+    @media @modal-sm {
+        margin-bottom: 1.6rem;
+    }
+}
+
+.timeline_item {
+    margin-bottom: 2.6rem;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    @media @modal-sm {
+        margin-bottom: 1.9rem;
+    }
+}
+
+.timeline_date {
+    margin-bottom: .8rem;
+    display: block;
+    font-size: .94rem;
+    text-decoration: underline;
+    color: @black;
+}
+
+.timeline_subtitle {
+    margin-bottom: .2rem;
+    font-size: 1.06rem;
+    color: @black;
+    font-weight: 700;
+}
+
+.timeline_position {
+    font-size: .94rem;
+    color: @black;
+    font-style: italic;
+}
+
+.timeline_text {
+    margin-top: .8rem;
+    line-height: 1.5;
+    font-size: .8rem;
+    color: @gray;
+    font-weight: 300;
+
+    @media @modal-sm {
+        text-align: justify;
+    }
+}

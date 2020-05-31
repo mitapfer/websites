@@ -1,0 +1,140 @@
+// main: ../style.less
+
+.modal-work {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.modal-work_preview {
+    width: 65%;
+    position: relative;
+    overflow: hidden;
+
+    @media @tablet-big {
+        width: 100%;
+        height: 400px;
+    }
+}
+
+.modal-work_photo {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate3d(-50%, -50%, 0);
+
+    @media @mobile-sm {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.modal-work_content {
+    width: 35%;
+    padding: 3.4rem 2.5rem 1rem 1.73rem;
+    position: relative;
+
+    @media @tablet-big {
+        width: 100%;
+    }
+
+    @media @mobile-sm {
+        padding: 2rem;
+    }
+
+    @media @very-sm {
+        padding: 1.5rem;
+    }
+}
+
+.modal-work_header {
+    margin-bottom: 2.2rem;
+}
+
+.modal-work_title {
+    margin-bottom: .2rem;
+    font-size: 2.12rem;
+    color: @black;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.modal-work_info {
+    font-size: 1.2rem;
+    color: @gray;
+    text-transform: uppercase;
+}
+
+.modal-work_info_devider {
+    margin: 0 1rem;
+}
+
+.modal-work_client {
+    margin-bottom: 2.2rem;
+}
+
+.modal-work_client_title {
+    margin-bottom: .2rem;
+    font-size: 1.06rem;
+    color: @black;
+    font-weight: 700;
+}
+
+.modal-work_client_company {
+    font-size: .94rem;
+    color: @gray;
+    font-style: italic;
+}
+
+.modal-work_text {
+    margin-bottom: 8.66rem;
+    font-size: .8rem;
+    line-height: 2;
+    color: @gray;
+    font-weight: 300;
+    text-align: justify;
+
+    @media @mobile-sm {
+        margin-bottom: 0;
+    }
+}
+
+.modal-work_footer {
+    width: 100%;
+    padding: 0 1.8rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+
+    @media @mobile-sm {
+        display: none;
+    }
+}
+
+.modal-work_btn {
+    padding: 0;
+    background: none;
+    border: 0;
+    font-family: inherit;
+    cursor: pointer;
+    font-size: .94rem;
+    color: @black;
+    text-transform: uppercase;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.modal-work_btn i {
+    margin: 0 5px;
+    font-size: 14px;
+    color: #3b3a3a;
+}
+

@@ -1,0 +1,93 @@
+// main: ../style.less
+
+.modal {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: fade(@black, 80%);
+    padding: 1rem;
+    overflow: auto;
+
+    &.show {
+        display: flex;
+    }
+}
+
+.modal_dialog {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+    background-color: #fff;
+    transform: scale(0);
+    transition: transform .2s linear;
+
+    &--sm {
+        max-width: 900px;
+    }
+}
+
+.modal_close {
+    padding: 0;
+    background: none;
+    border: 0;
+    cursor: pointer;
+    width: 34px;
+    height: 39px;
+    position: absolute;
+    top: .9rem;
+    right: 1rem;
+    z-index: 1;
+    transition: transform .2s linear;
+
+    &:hover {
+        transform: translateY(-3px);
+    }
+
+    @media @mobile-sm {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+.modal_content {
+    padding: 5rem 1rem;
+
+    @media @modal-sm {
+        padding-bottom: 3rem;
+    }
+}
+
+.modal_title {
+    margin-bottom: 3.6rem;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: @black;
+    font-weight: 700;
+
+    @media @modal-sm {
+        margin-bottom: 2.4rem;
+        font-size: 2.5rem;
+    }
+
+    @media @very-sm {
+        font-size: 1.9rem;
+    }
+}
+
+.modal_subtitle {
+    text-transform: uppercase;
+    font-size: 1.06rem;
+    color: @black;
+    font-weight: 400;
+
+    @media @very-sm {
+        font-size: .8rem;
+    }
+}
+
+

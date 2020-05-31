@@ -1,0 +1,30 @@
+// main: ../style.less
+
+.header {
+    padding: 1.2rem 0;
+    position: relative;
+
+    @media @mobile {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1000;
+        background-color: #fff;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .3);
+    }
+
+    @media @mobile-sm {
+        padding: .95rem 0;
+    }
+
+    @media @very-sm {
+        padding: .75rem 0;
+    }
+}
+
+.header_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

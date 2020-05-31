@@ -1,0 +1,68 @@
+// main: ../style.less
+
+.user {
+    display: flex;
+}
+
+.user_avatar {
+    width: 57px;
+    height: 57px;
+
+    img {
+        border-radius: 50%;
+        width: 57px;
+        height: 57px;
+
+        @media @mobile-sm {
+            width: 50px;
+            height: 50px;
+        }
+
+        @media @very-sm {
+            width: 47px;
+            height: 47px;
+        }
+    }
+
+    @media @mobile-sm {
+        width: 50px;
+        height: 50px;
+    }
+
+    @media @very-sm {
+        width: 47px;
+        height: 47px;
+    }
+}
+
+.user_content {
+    padding-left: 9px;
+}
+.user_name {
+    margin-bottom: 3px;
+    font-size: 1.06rem;
+    line-height: 1.2;
+    color: @black;
+    font-weight: 700;
+
+    @media @mobile-sm {
+        font-size: .95rem;
+    }
+
+    @media @very-sm {
+        font-size: .80rem;
+    }
+}
+
+.user_prof {
+    font-size: 0.8rem;
+    color: rgba(@black, .7);
+
+    @media @mobile-sm {
+        font-size: .7rem;
+    }
+
+    @media @very-sm {
+        font-size: .65rem;
+    }
+}
