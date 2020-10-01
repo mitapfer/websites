@@ -459,6 +459,10 @@ p {
     .nav_link.active {
         background-color: transparent;
     }
+    
+    .nav_link:hover {
+        background-color: transparent;
+    }
 
     .burger {
         display: block;
