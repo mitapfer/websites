@@ -384,6 +384,10 @@ p {
         background-color: transparent;
     }
     
+    .nav_link.active {
+        color: #D14B4BFF;
+    }
+    
     .nav_link:hover {
         background-color: transparent;
     }
