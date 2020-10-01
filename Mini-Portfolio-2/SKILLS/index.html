@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mini-Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <meta name="google" content="notranslate"/>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3030887942.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <div class="header_inner">
+
+            <div class="user">
+                <div class="user_avatar">
+                    <img class="user_photo" src="Images/Avatar.png" alt="">
+                </div>
+            </div>
+
+            <div class="nav_menu" data-check="false">
+                <i class="fas fa-times close"></i>    
+                <nav class="nav">
+                    <a href="../Profile/index.html" class="nav_link">
+                       <i class="fas fa-user-alt"></i>
+                        Profile
+                    </a>
+                    <a href="../SKILLS/index.html" class="nav_link active">
+                       <i class="fas fa-chart-bar"></i>
+                        Skills
+                    </a>
+                    <a href="../WORKS/index.html" class="nav_link">
+                       <i class="fas fa-briefcase"></i>
+                        Works
+                    </a>
+                    <a href="../RESUME/index.html" class="nav_link">
+                       <i class="far fa-file-alt"></i>
+                        Resume
+                    </a>
+                </nav>
+            </div>
+
+            <button class="burger" type="button" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+
+        </div>
+    </div>
+</header>
+
+<div class="progress_bar">
+   <div class="container">
+        <div class="progress_bar_inner">
+            <div class="progress_bar_item">
+                <div class="progress_bar_square">
+                    <img src="Images/PS.png" alt="">
+                </div>
+                <div class="progress_bar_left progress_left--blue">
+                    <div class="progress_bar_title">Ps</div>
+                </div>
+                <div class="progress_bar_right">
+                    <div class="progress_bar_info">
+                        <div class="progress_bar_name">Photoshop</div>
+                        <div class="progress_bar_percent">90%</div>
+                    </div>
+
+                    <div class="progress_bar_bar">
+                        <div class="progress_bar_progress progress_left--blue" style="width: 90%;"></div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="progress_bar_item">
+                <div class="progress_bar_square">
+                    <img src="Images/ILLUSTRATOR.jpg" alt="">
+                </div>
+                <div class="progress_bar_left progress_left--orange">
+                    <div class="progress_bar_title">Ai</div>
+                </div>
+                <div class="progress_bar_right">
+                    <div class="progress_bar_info">
+                        <div class="progress_bar_name">ILLUSTRATOR</div>
+                        <div class="progress_bar_percent">80%</div>
+                    </div>
+
+                    <div class="progress_bar_bar">
+                        <div class="progress_bar_progress progress_left--orange" style="width: 80%;"></div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="progress_bar_item">
+                <div class="progress_bar_square">
+                    <img src="Images/HTML.jpg" alt="">
+                </div>
+                <div class="progress_bar_left progress_left--red">
+                    <div class="progress_bar_title progress_bar_title--sm">HTML5</div>
+                </div>
+                <div class="progress_bar_right">
+                    <div class="progress_bar_info">
+                        <div class="progress_bar_name">HTML5</div>
+                        <div class="progress_bar_percent">75%</div>
+                    </div>
+
+                    <div class="progress_bar_bar">
+                        <div class="progress_bar_progress progress_left--red" style="width: 75%;"></div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="progress_bar_item">
+                <div class="progress_bar_square">
+                    <img src="Images/CSS.jpg" alt="">
+                </div>
+                <div class="progress_bar_left progress_left--green">
+                    <div class="progress_bar_title progress_bar_title--sm">CSS3</div>
+                </div>
+                <div class="progress_bar_right">
+                    <div class="progress_bar_info">
+                        <div class="progress_bar_name">CSS3</div>
+                        <div class="progress_bar_percent">85%</div>
+                    </div>
+
+                    <div class="progress_bar_bar">
+                        <div class="progress_bar_progress progress_left--green" style="width: 85%;"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" data-check="false">
+    <div class="modal_dialog">
+        <i class="fas fa-times" id="close"></i>
+        <form class="form" action="/" method="post">
+            <div class="form_group">
+
+                <input class="form_input" name="input-email" type="text" id="input-email" placeholder="NAME">
+
+                <input class="form_input" name="input-email" type="text" id="input-email" placeholder="E-MAIL">
+            </div>
+
+            <div class="form_group">
+                <textarea class="form_textarea" name="message" id="input-text" placeholder="MESSAGE"></textarea>
+            </div>
+
+            <div class="text_right">
+                <button class="btn btn--sm" type="submit">SEND</button>
+            </div>
+        </form>
+
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer_inner">
+            <div class="footer_website">
+                <a class="footer_link" href="#">www.juandelacruz.com</a>
+            </div>
+            <div class="footer_contact">
+                <a href="#" data-modal="#modal_contact">
+                    <i class="fas fa-circle"></i>
+                    Contact
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
