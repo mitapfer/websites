@@ -589,13 +589,13 @@ p {
     }
 
     .form_input, .form_textarea {
-        padding: 20px 15px;
-        font-size: 16px;
+        padding: 15px 15px;
+        font-size: 14px;
     }
 
     .form_textarea {
         margin-bottom: 22px;
-        height: 218px;
+        height: 180px;
     }
 
     .btn.btn--sm {
