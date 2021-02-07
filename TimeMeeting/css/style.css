@@ -1,0 +1,170 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+.container {
+    width: 100%;
+    padding: 0 15px;
+    max-width: 1230px;
+    margin: 0 auto;
+}
+
+.timer__item {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(46, 46, 46);
+    padding: 50px;
+    color: white;
+    color: #ffd466;
+    margin-bottom: 50px;
+}
+
+.timer__item:first-child {
+    margin: 50px 0;
+}
+
+.timer__title {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.timer__title--sm {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+.timer__title--nonemb {
+    margin-bottom: 0;
+}
+
+.timer__list {
+    display: flex;
+    justify-content: center;
+    color: black;
+    margin-bottom: 50px;
+}
+
+.timer__list.saturday {
+    margin-bottom: 0;
+}
+
+.timer__block {
+    width: 102px;
+    height: 120px;
+    background: #fff;
+    box-shadow: 0 4px 20px rgb(0 0 0 / 25%);
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    margin-left: 50px;
+    color: #ffd466;
+    background-color: black;
+}
+
+.timer__block:first-child {
+    margin-left: 0;
+}
+
+.timer__block span {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-size: 56px;
+    font-weight: 700;
+}
+
+
+/* MEDIA */
+
+@media(max-width: 715px) {
+    .timer__item {
+        padding: 30px;
+    }
+
+    .timer__title {
+        font-size: 35px;
+        margin-bottom: 40px;
+    }
+
+    .timer__title--sm {
+        font-size: 22px;
+        margin-bottom: 25px;
+    }
+
+    .timer__block {
+        height: 110px;
+        margin-left: 25px;
+    }
+
+    .timer__block span {
+        font-size: 45px;
+        margin-top: 15px;
+    }
+}
+
+@media(max-width: 490px) {
+    .timer__item {
+        margin-bottom: 30px;
+    }
+
+    .timer__item:first-child {
+        margin: 30px 0;
+    }
+
+    .timer__list {
+        margin-bottom: 30px;
+    }
+
+    .timer__block {
+        height: 95px;
+        margin-left: 15px;
+    }
+
+    .timer__block span {
+        font-size: 32px;
+        margin-top: 15px;
+    }
+
+    .timer__title {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    .timer__title--sm {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+}
+
+@media(max-width: 400px) {
+    .timer__item {
+        padding: 15px;
+    }
+
+    .timer__title {
+        font-size: 25px;
+    }
+
+    .timer__title--sm {
+        font-size: 15px;
+    }
+
+    .timer__block {
+        height: 70px;
+        font-size: 12px;
+        margin-left: 10px;
+    }
+
+    .timer__block span {
+        font-size: 25px;
+        margin-top: 10px;
+    }
+}
