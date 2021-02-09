@@ -110,7 +110,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 clearInterval(timeInterval);
                 const parent = timerBlock[0].parentElement;
                 parent.innerHTML = '';
-                parent.innerHTML = '<div class="timer__title timer__title--nonemb">Встреча уже прошла!</div>';
+                parent.innerHTML = '<div class="timer__title timer__title--nonemb">Встреча уже началась или прошла!</div>';
                 parent.style.cssText = `
                     color: white;
                     margin-top: 50px;
