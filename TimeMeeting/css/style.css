@@ -93,6 +93,10 @@ body {
         font-size: 35px;
         margin-bottom: 40px;
     }
+    
+    .timer__title--nonemb {
+        margin-bottom: 0;
+    }
 
     .timer__title--sm {
         font-size: 22px;
@@ -136,6 +140,10 @@ body {
     .timer__title {
         font-size: 28px;
         margin-bottom: 30px;
+    }
+    
+    .timer__title--nonemb {
+        margin-bottom: 0;
     }
 
     .timer__title--sm {
