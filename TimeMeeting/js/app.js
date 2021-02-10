@@ -120,11 +120,11 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
     // Неделя от 8 февраля
-    setClock('.week__eight>.wednesday', '2021-02-10 18:30:00');
-    setClock('.week__eight>.saturday', '2021-02-13 18:30:00');
+    setClock('.week__eight>.wednesday', '2021/02/10 18:30:00');
+    setClock('.week__eight>.saturday', '2021/02/13 18:30:00');
 
     // Неделя от 15 февраля
-    setClock('.week__fifteen>.wednesday', '2021-02-17 18:30:00');
-    setClock('.week__fifteen>.saturday', '2021-02-20 18:30:00');
+    setClock('.week__fifteen>.wednesday', '2021/02/17 18:30:00');
+    setClock('.week__fifteen>.saturday', '2021/02/20 18:30:00');
 });
 
