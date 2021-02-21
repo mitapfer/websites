@@ -59,8 +59,8 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    new Timer(8, 'week__eight').render();
-    new Timer(15, 'week__fifteen').render();
+    new Timer(22, 'week__eight').render();
+    new Timer(1, 'week__fifteen').render();
 
 
     // Timer
