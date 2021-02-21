@@ -61,7 +61,7 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
     new Timer(22, 'февраля', 'week__eight').render();
-    new Timer(1, 'марта', week__fifteen').render();
+    new Timer(1, 'марта', 'week__fifteen').render();
 
 
     // Timer
