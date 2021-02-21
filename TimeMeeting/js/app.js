@@ -15,7 +15,7 @@ window.addEventListener('DOMContentLoaded', () => {
             element.classList.add(`${this.unicClass}`);
 
             element.innerHTML = `
-                <div class="timer__title">Неделя от ${this.day this.month}</div>
+                <div class="timer__title">Неделя от ${this.day} ${this.month}</div>
                 <div class="timer__title timer__title--sm">До начала встречи в среду:</div>
                 <div class="timer__list wednesday">
                     <div class="timer__block">
