@@ -3,8 +3,9 @@
 window.addEventListener('DOMContentLoaded', () => {
 
     class Timer {
-        constructor(day, unicClass) {
+        constructor(day, month, unicClass) {
             this.day = day;
+            this.month = month;
             this.unicClass = unicClass;
         }
 
@@ -14,7 +15,7 @@ window.addEventListener('DOMContentLoaded', () => {
             element.classList.add(`${this.unicClass}`);
 
             element.innerHTML = `
-                <div class="timer__title">Неделя от ${this.day} февраля</div>
+                <div class="timer__title">Неделя от ${this.day this.month}</div>
                 <div class="timer__title timer__title--sm">До начала встречи в среду:</div>
                 <div class="timer__list wednesday">
                     <div class="timer__block">
@@ -59,8 +60,8 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    new Timer(22, 'week__eight').render();
-    new Timer(1, 'week__fifteen').render();
+    new Timer(22, 'февраля', 'week__eight').render();
+    new Timer(1, 'марта', week__fifteen').render();
 
 
     // Timer
