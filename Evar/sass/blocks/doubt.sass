@@ -1,0 +1,29 @@
+@import "../_vars"
+
+.doubt
+    background-color: $light-blue
+    padding: 130px 0
+    &__title
+        font-family: 'Prata', serif
+        font-weight: 400
+        font-size: 48px
+        margin-bottom: 70px
+    &__content
+        display: flex
+    &__item
+        &-wrapper,
+        &-img
+            width: 505px
+            height: 490px
+        &-wrapper
+            transform: translate(28px, 28px)
+            background-color: $yellow
+            margin-right: 88px
+        &-img
+            transform: translate(-28px, -28px)
+            background-color: #fff
+            position: relative
+            img
+                position: absolute
+                bottom: 0
+                left: 105px

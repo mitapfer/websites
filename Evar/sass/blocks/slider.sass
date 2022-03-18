@@ -1,0 +1,81 @@
+@import "../_vars"
+    
+.slider
+    margin-bottom: 115px
+    color: #000
+    &__cards
+        display: flex
+        transform: translateY(-147px)
+    &__card
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        background-color: $blue
+        height: 295px
+        width: 33.3333%
+        color: #fff
+        &-number
+            font-family: 'Prata', serif
+            color: $yellow
+            font-size: 110px
+            line-height: 1
+        &:nth-child(2)
+            background-color: $light-blue
+        &-text
+            font-size: 30px
+    &__item
+        &-title
+            font-family: 'Prata', serif
+            font-weight: 400
+            font-size: 48px
+            margin-top: 120px
+        &-wrapper
+            background-color: $yellow
+            width: 505px
+            height: 490px
+            transform: translate(28px, 28px)
+            margin-right: 25px
+        &-img
+            width: 505px
+            height: 490px
+            background-color: $blue
+            text-align: center
+            color: #fff
+            padding: 30px 30px
+            transform: translate(-28px, -28px)
+            &__title
+                font-family: 'Prata', serif
+                font-size: 36px
+                margin-bottom: 38px
+        &-descr
+            padding: 0 0 0 70px
+            &__title
+                font-family: 'Prata', serif
+                font-size: 30px
+                margin-bottom: 28px
+            &__text
+                font-size: 22px
+                margin-bottom: 28px
+        &-content
+            display: flex
+            margin-top: 100px
+    &__control,
+    &__control--registration,
+    &__control--clients
+        display: flex
+        justify-content: center
+        margin-top: 65px
+    &__btn
+        &-prev
+            transform: rotate(180deg)
+            margin-right: 25px
+            &:hover
+                transform: rotate(180deg) scale(1.2)
+        &-next
+            &:hover
+                transform: scale(1.2)
+        &-prev,
+        &-next
+            transition: all .2s linear
+            cursor: pointer

@@ -1,0 +1,62 @@
+@import "../_vars"
+
+.form
+    &--modal
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        width: 100%
+        input
+            max-width: 100%
+            width: 100%
+            background-color: $light-blue
+        input + input
+            margin-top: 20px
+        .btn
+            max-width: 200px !important
+            width: 100% !important
+            margin-top: 40px !important
+            font-size: 22px !important
+    &__title
+        font-family: 'Prata', serif
+        font-size: 33px
+        color: $yellow
+        margin-bottom: 20px
+    &__text
+        font-size: 24px
+    &__group
+        display: flex
+        margin-top: 50px
+    &__input
+        max-width: 340px
+        width: 100%
+        height: 70px
+        & + &
+            margin-left: 36px
+    &__textarea
+        margin-top: 25px
+        max-width: 720px
+        width: 100%
+        height: 175px
+        resize: none
+    &__input,
+    &__textarea
+        font-family: 'Prata', serif
+        color: #fff
+        border-style: solid
+        font-size: 24px
+        border-width: 1px
+        background-color: $light-blue
+        border-color: $yellow
+        padding: 18px
+        border-radius: 5px
+        &::-webkit-input-placeholder
+            color: #fff
+    .btn
+        display: block
+        margin-top: 25px
+        max-width: 255px
+        width: 100%
+        border-radius: 5px
+        font-size: 30px

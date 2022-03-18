@@ -1,0 +1,61 @@
+@import "../_vars"
+
+.header
+    &__top
+        padding: 10px 55px
+        font-size: 15px
+        background-color: $blue
+    &__inner
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__contact
+        display: flex
+        &-phone,
+        &-email,
+        &-schedule
+            display: flex
+            align-items: center
+            margin-right: 20px 
+            img
+                width: 20px
+                height: 20px
+                margin-right: 10px
+        &-phone
+            color: #fff
+            font-size: 15px
+    &__info
+        display: flex
+        align-items: center
+        .social
+            margin-right: 45px
+    &__bottom
+        height: 1000px
+        background-image: url("../img/header-bg.webp")
+        background-size: cover 
+        background-repeat: no-repeat
+        &-inner
+            display: flex
+            align-items: center
+            height: 91.4vh
+    &__content
+        max-width: 915px
+        &-title
+            font-family: 'Prata', serif
+            font-size: 68px
+            color: $yellow
+        &-descr
+            position: relative
+            max-width: 850px
+            font-size: 36px
+            margin: 80px 0 0 15px
+            &::before
+                position: absolute
+                left: -70px
+                top: 50%
+                transform: rotate(90deg)
+                content: ""
+                display: block
+                width: 118px
+                height: 6px
+                background-color: $yellow
