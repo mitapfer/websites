@@ -1,0 +1,49 @@
+@import "vars"
+@import "mixins"
+
+body 
+    font-family: 'Montserrat', sans-serif
+    font-size: 15px
+    color: black
+    &.no-scroll
+        overflow: hidden
+
+*,
+*:before,
+*:after 
+    box-sizing: border-box
+
+h1, h2, h3, h4, h5, h6 
+    margin: 0
+
+p, ul, li, h1, h2, h3, h4, h5, h6,
+form, img, header, nav, section,
+div, footer, body
+    margin: 0
+    padding: 0
+
+a
+    text-decoration: none
+    color: $black
+    line-height: 1
+    &:hover
+        text-decoration: underline
+
+
+// Blocks
+@import "blocks/container"
+@import "blocks/btn"
+@import "blocks/helpers"
+@import "blocks/section"
+@import "blocks/social"
+@import "blocks/logo"
+@import "blocks/header"
+@import "blocks/form"
+@import "blocks/aboutus"
+@import "blocks/gaiety"
+@import "blocks/rooms"
+@import "blocks/gallery"
+@import "blocks/map"
+@import "blocks/footer"
+@import "blocks/modal"
+@import "blocks/media"
