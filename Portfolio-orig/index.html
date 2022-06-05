@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon.jpg" type="images/jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Portfolio</title>
+</head>
+<body>
+
+  <nav class="navigation">
+    <ul class="navigation__inner">
+      <li class="navigation__link">
+        <a href="#contacts">
+          <img src="assets/icons/phone.svg" alt="icon">
+          Contacts
+        </a>
+      </li>
+      <li class="navigation__link">
+        <a href="#works">
+          <img src="assets/icons/briefcase.svg" alt="icon">
+          Works
+        </a>
+      </li>
+      <li class="navigation__link">
+        <a href="#about">
+          <img src="assets/icons/user.svg" alt="about me icon">
+          About me
+        </a>
+      </li>
+      <li class="navigation__link active">
+        <a href="#developer">
+          <img src="assets/icons/house.svg" alt="home icon">
+          Home
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <section class="developer" id="developer">
+    <div class="container">
+      <div class="developer__inner">
+        <div class="developer__content">
+          <h1 class="developer__title">Michael Krilov</h1>
+          <div class="developer__prof"><span>F</span>ront-end <span>d</span>eveloper</div>
+          <div class="developer__quote">
+            "Walking on water and developing software following the ToR is very easy... if it's frozen."
+          </div>
+          <div class="developer__btn">
+            <button>
+              Contacts
+              <img src="assets/icons/arrow.svg" alt="arrow">
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about__inner">
+        <div class="about__info">
+          <h2 class="section__title">
+            <span>A</span>bout me
+          </h2>
+
+          <ul class="about__content">
+            <li class="about__info-item">
+              <b>Name:</b> Michael Krilov
+            </li>
+            <li class="about__info-item">
+              <b>Age:</b> 19
+            </li>
+            <li class="about__info-item">
+              <b>Qualities:</b> hardworking, purposeful, punctual, communicable
+            </li>
+            <li class="about__info-item">
+              <b>Work experience:</b> 1 year
+            </li>
+            <li class="about__info-item">
+              <b>Languages:</b> English (B2), Russian (native)
+            </li>
+            <li class="about__info-item">
+              <b>Skills:</b> React, Redux, TypeScript, Gulp, HTML, SCSS/SASS, Git
+            </li>
+            <li class="about__info-item">
+              <b>Education:</b> JS / FRONT-END and React courses from RS School, Udemy course "JavaScript + React - from scratch to result"
+            </li>
+          </ul>
+        </div>
+        <div class="about__img">
+          <img src="assets/img/me.jpg" alt="selfie photo">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="works" id="works">
+    <div class="container">
+      <h2 class="section__title section__title--center">
+        <span>W</span>orks
+      </h2>
+      <div class="works__inner">
+
+        <div class="works__item">
+          <div class="works__item-img">
+            <img src="assets/img/trello.png" alt="trello website screenshot">
+          </div>
+          <div class="works__item-info">
+            <div class="works__item-title">RS Trello</div>
+
+            <div class="works__item-descr">
+              RS Trello is a copy of the well-known Trello tool of the same name that allows you to manage projects, workflows and tasks of all types. Registration / login, adding boards and tasks are available here
+            </div>
+
+            <div class="works__item-tools">
+              <span class="works__item-tool works__item-tool--react">React</span>
+              <span class="works__item-tool works__item-tool--redux">Redux</span>
+              <span class="works__item-tool works__item-tool--ts">TypeScript</span>
+              <span class="works__item-tool works__item-tool--scss">SCSS</span>
+              <span class="works__item-tool works__item-tool--html">HTML</span>
+            </div>
+
+            <a class="works__item-btn" href="https://rs-trello.netlify.app/" target="_blank">
+              Look
+            </a>
+          </div>
+        </div>
+
+        <div class="works__item">
+          <div class="works__item-img">
+            <img src="assets/img/news.png" alt="news website screenshot">
+          </div>
+          <div class="works__item-info">
+            <div class="works__item-title">Breaking News</div>
+
+            <div class="works__item-descr">
+              Breaking News is a news portal for viewing the latest events in the world. It contains news by category, as well as a search with which you can find the event you are interested in.
+            </div>
+
+            <div class="works__item-tools">
+              <span class="works__item-tool works__item-tool--react">React</span>
+              <span class="works__item-tool works__item-tool--redux">Redux</span>
+              <span class="works__item-tool works__item-tool--ts">TypeScript</span>
+              <span class="works__item-tool works__item-tool--scss">SCSS</span>
+              <span class="works__item-tool works__item-tool--html">HTML</span>
+            </div>
+
+            <a class="works__item-btn" href="https://github.com/Mikel2003/websites/tree/gh-pages/News" target="_blank">
+              Look
+            </a>
+          </div>
+        </div>
+
+        <div class="works__item">
+          <div class="works__item-img">
+            <img src="assets/img/momentum.png" alt="momentum website screenshot">
+          </div>
+          <div class="works__item-info">
+            <div class="works__item-title">Momentum</div>
+            
+            <div class="works__item-descr">
+              Momentum is a well-known extension for the Chrome browser that allows you to listen to music, watch the weather and more. Every day has its own background. It also displays quotes from great people.
+            </div>
+
+            <div class="works__item-tools">
+              <span class="works__item-tool works__item-tool--js">JavaScript</span>
+              <span class="works__item-tool works__item-tool--css">CSS</span>
+              <span class="works__item-tool works__item-tool--html">HTML</span>
+            </div>
+
+            <a class="works__item-btn" href="https://rolling-scopes-school.github.io/mikel2003-JSFE2021Q3/momentum/" target="_blank">
+              Look
+            </a>
+          </div>
+        </div>
+
+        <div class="works__item">
+          <div class="works__item-img">
+            <img src="assets/img/shelter.png" alt="shelter website screenshot">
+          </div>
+          <div class="works__item-info">
+            <div class="works__item-title">Shelter</div>
+            
+            <div class="works__item-descr">
+              Shelter - personifies the house for harmless animals. Here you can find your best friend who will love you. You can also find information on how to make a donation or provide other assistance.
+            </div>
+
+            <div class="works__item-tools">
+              <span class="works__item-tool works__item-tool--js">JavaScript</span>
+              <span class="works__item-tool works__item-tool--scss">SCSS</span>
+              <span class="works__item-tool works__item-tool--html">HTML</span>
+            </div>
+
+            <a class="works__item-btn" href="https://rolling-scopes-school.github.io/mikel2003-JSFE2022Q1/shelter/pages/main" target="_blank">
+              Look
+            </a>
+          </div>
+        </div>
+
+        <div class="works__item">
+          <div class="works__item-img">
+            <img src="assets/img/museum.png" alt="louvre website screenshot">
+          </div>
+          <div class="works__item-info">
+            <div class="works__item-title">Louvre</div>
+            
+            <div class="works__item-descr">
+              Anyone who has ever wanted to visit the Louvre Museum can now do so online. Or you can buy tickets and see the exciting exhibits live.
+            </div>
+
+            <div class="works__item-tools">
+              <span class="works__item-tool works__item-tool--js">JavaScript</span>
+              <span class="works__item-tool works__item-tool--css">CSS</span>
+              <span class="works__item-tool works__item-tool--html">HTML</span>
+            </div>
+
+            <a class="works__item-btn" href="https://rolling-scopes-school.github.io/mikel2003-JSFE2021Q3/museum-dom/" target="_blank">
+              Look
+            </a>
+          </div>
+        </div>
+
+        <div class="works__item">
+          <div class="works__item-img">
+            <img src="assets/img/anhor.png" alt="momentum website screenshot">
+          </div>
+          <div class="works__item-info">
+            <div class="works__item-title">Anhor</div>
+            
+            <div class="works__item-descr">
+              Book your seats in the best suburban recreation area. Here you will find a large number of swimming pools, children's and football grounds. Budget and luxury cottages available
+            </div>
+
+            <div class="works__item-tools">
+              <span class="works__item-tool works__item-tool--js">JavaScript</span>
+              <span class="works__item-tool works__item-tool--scss">SASS</span>
+              <span class="works__item-tool works__item-tool--html">HTML</span>
+            </div>
+
+            <a class="works__item-btn" href="https://mikel2003.github.io/websites/Anhor-Zone/" target="_blank">
+              Look
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer" id="contacts">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__social">
+          <a class="footer__social-item" href="https://www.instagram.com/mitapfer_13/" target="_blank">
+            <img src="assets/icons/instagram.svg" alt="instagram">
+          </a>
+          <a class="footer__social-item" href="https://www.linkedin.com/in/michael-krilov-794425240" target="_blank">
+            <img src="assets/icons/linkedin.svg" alt="linkedin">
+          </a>
+          <a class="footer__social-item" href="https://t.me/mitapfer_13" target="_blank">
+            <img src="assets/icons/telegram.svg" alt="telegram">
+          </a>
+        </div>
+
+        <div class="footer__gmail">
+          <a href="to:mladshiy.2003.13@gmail.com">mladshiy.2003.13@gmail.com</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
