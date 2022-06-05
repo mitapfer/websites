@@ -1,0 +1,45 @@
+.posts__categories {
+    width: 15%;
+    padding-left: 15px;
+    &-title {
+        font-weight: 600;
+    }
+    &-list {
+        padding: 0;
+        list-style-type: none;
+        color: #828282;
+        label {
+            cursor: pointer;
+        }
+        li {
+            margin-top: 5px;
+        }
+    }
+}
+
+.checkbox {
+    position: relative;
+    &__input {
+        appearance: none;
+        position: absolute;
+        &:checked + .checkbox__label:before {
+            background-color: #910201;
+        }
+    }
+    &__label {
+        padding-left: 25px;
+        &::before {
+            content: "";
+            display: block;
+            width: 15px;
+            height: 15px;
+            border: 1px solid #828282;
+            border-radius: 4px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 3px;
+            left: 0;
+            z-index: -1;
+        }
+    }
+}

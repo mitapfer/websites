@@ -1,0 +1,17 @@
+.button {
+    max-width: 160px;
+    width: 100%;
+    color: #fff;
+    background-color: #910201;
+    border: none;
+    font-family: inherit;
+    height: 30px;
+    border-radius: 3px;
+    font-size: 16px;
+    &__wrapper {
+        display: flex;
+        justify-content: right;
+        margin-top: 30px;
+        width: 100%;
+    }
+}

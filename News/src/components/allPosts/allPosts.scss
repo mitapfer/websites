@@ -1,0 +1,23 @@
+@import '../../style/variables.scss';
+
+.posts {
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 85%;
+        margin-bottom: 30px;
+        &-message {
+            display: none;
+            text-align: center;
+            width: 100%;
+            color: $main;
+            margin-top: 15px;
+        }
+    }    
+}

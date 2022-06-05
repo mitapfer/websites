@@ -1,0 +1,10 @@
+.news__aside {
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    width: 25%;
+    position: relative;
+    img {
+        height: 234px;
+    }    
+}
